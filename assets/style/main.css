@@ -30,14 +30,15 @@
     }
 
     .title {
-        &__h1 {
+        & __h1 {
             @apply text-4xl sm:text-6xl lg:text-8xl text-center font-black;
             background: transparent linear-gradient(249deg, var(--unnamed-color-ffffff) 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
             background: transparent linear-gradient(249deg, #FFFFFF 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        &__p{
+
+        & __p {
             @apply text-white text-center font-light;
         }
     }
@@ -51,14 +52,20 @@
         margin-left: 30px;
         margin-top: 5px;
 
-        &--delayed {
+        & --delayed {
             animation-delay: 1.5s;
         }
     }
 
     @keyframes floating {
-        0% { transform: translate(0,  0px); }
-        50%  { transform: translate(0, 15px); }
-        100%   { transform: translate(0, -0px); }
+        0% {
+            transform: translate(0, 0px);
+        }
+        50% {
+            transform: translate(0, 15px);
+        }
+        100% {
+            transform: translate(0, -0px);
+        }
     }
 }
