@@ -22,9 +22,9 @@
         >
           <div class="flex flex-col gap-10 title mt-10">
             <div class="relative">
-              <h1 class="title__h1">Elevating<br />Webexpiriences</h1>
-              <div class="title__h1 absolute inset-0">
-                <h1 class="title__h1">
+              <h1 class="title-h1">Elevating<br />Webexpiriences</h1>
+              <div class="title-h1 absolute inset-0">
+                <h1 class="title-h1">
                   <span class="relative"
                     >Elevating
                     <div
@@ -41,7 +41,7 @@
               </div>
             </div>
 
-            <p class="text-white text-center title__p">
+            <p class="text-white text-center title-p">
               “Prepare for a stellar voyage through the boundless realm of web
               experiences, ascending to greater heights with every website.
               Together, we’ll chart our course through the expansive reaches of
@@ -136,7 +136,7 @@ if (process.client) {
     duration: 0,
     zIndex: -1,
   });
-  tl.from(".title__h1", {
+  tl.from(".title-h1", {
     duration: 1,
     y: 100,
     opacity: 0,
@@ -145,7 +145,7 @@ if (process.client) {
     ease: "power2.out",
   }),
     -0.5;
-  tl.from(".title__p", {
+  tl.from(".title-p", {
     duration: 1,
     y: 100,
     opacity: 0,

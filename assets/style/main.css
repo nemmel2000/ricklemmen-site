@@ -29,18 +29,17 @@
         -webkit-backdrop-filter: blur(30px);
     }
 
-    .title {
-        & __h1 {
-            @apply text-4xl sm:text-6xl lg:text-8xl text-center font-black;
-            background: transparent linear-gradient(249deg, var(--unnamed-color-ffffff) 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
-            background: transparent linear-gradient(249deg, #FFFFFF 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+    .title-h1 {
 
-        & __p {
-            @apply text-white text-center font-light;
-        }
+        @apply text-4xl sm:text-6xl lg:text-8xl text-center font-black;
+        background: transparent linear-gradient(249deg, var(--unnamed-color-ffffff) 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
+        background: transparent linear-gradient(249deg, #FFFFFF 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .title-p {
+        @apply text-white text-center font-light;
     }
 
 
@@ -51,10 +50,9 @@
         animation-timing-function: ease-in-out;
         margin-left: 30px;
         margin-top: 5px;
-
-        & --delayed {
-            animation-delay: 1.5s;
-        }
+    }
+    .floating--delayed{
+        animation-delay: 1.5s;
     }
 
     @keyframes floating {
