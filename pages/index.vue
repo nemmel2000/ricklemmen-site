@@ -122,7 +122,7 @@ console.log(
 
 // GSAP
 if (process.client) {
-  gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+  gsap.registerPlugin(ScrollTrigger);
 
   let constructionElements = document.querySelectorAll(".ani-construction");
 
