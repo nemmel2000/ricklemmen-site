@@ -216,7 +216,6 @@ if (process.client) {
       opacity: 0,
       duration: 1,
       scrollTrigger: {
-        markers: true,
         trigger: ".construction",
         start: "top 60%",
       },
