@@ -90,12 +90,12 @@
           <img
             src="/img/style-elements/Earth.svg"
             alt="construction"
-            class="w-96 absolute -right-[20%] -bottom-[20%] ani-construction floating floating--delayed"
+            class="earth"
           />
           <img
             src="/img/style-elements/Planet.svg"
             alt="construction"
-            class="w-96 absolute left-0 bottom-0 ani-construction floating hidden md:block"
+            class="planet "
           />
         </section>
       </div>
@@ -123,8 +123,6 @@ console.log(
 // GSAP
 if (process.client) {
   gsap.registerPlugin(ScrollTrigger);
-
-  let constructionElements = document.querySelectorAll(".ani-construction");
 
   let tl = gsap.timeline();
   tl.to("#fade-intro", {
@@ -195,12 +193,11 @@ if (process.client) {
       trigger: "#construction",
       start: "top 100%",
       end: "top 60%",
-      scrub: true,
+      scrub: 1,
     },
   });
 
-  constructionElements.forEach((element) => {
-    gsap.from(element, {
+    gsap.from(".construction", {
       y: 100,
       scale: 0,
       opacity: 0,
@@ -208,20 +205,30 @@ if (process.client) {
         trigger: ".construction",
         start: "top 100%",
         end: "top 80%",
-        scrub: true,
+        scrub: 1,
       },
-    });
   });
 
-  gsap.from(".planet", {
-    y: 100,
+
+    gsap.from(".planet", {
+      y: 100,
+      scale: 0,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        markers: true,
+        trigger: ".construction",
+        start: "top 60%",
+      },
+  });
+  gsap.from(".earth", {
+    y: 200,
     scale: 0,
     opacity: 0,
+    duration: 1,
     scrollTrigger: {
       trigger: ".construction",
-      start: "top 100%",
-      end: "top 80%",
-      scrub: true,
+      start: "top 60%",
     },
   });
 }
