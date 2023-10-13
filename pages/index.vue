@@ -123,6 +123,7 @@ console.log(
 // GSAP
 if (process.client) {
   gsap.registerPlugin(ScrollTrigger);
+  ScrollTrigger.normalizeScroll(true)
 
   let tl = gsap.timeline();
   tl.to("#fade-intro", {
