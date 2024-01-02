@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <TheNavbar/>
+<!--    <TheNavbar/>-->
     <slot/>
   </div>
 </template>
