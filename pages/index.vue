@@ -24,8 +24,8 @@
       class="bg-tertiary w-full h-full rounded-bl-extra overflow-visible"
       id="header"
     >
-      <div class="container grid grid-cols-12 h-full pt-32">
-        <div class="col-span-12 lg:col-span-6 h-full pb-10 xl:pb-32">
+      <div class="container grid grid-cols-12 h-full pt-32 2xl:pt-40">
+        <div class="col-span-12 lg:col-span-6 h-full 2xl:pt-60 pb-10 xl:pb-32">
           <div
             class="flex flex-col justify-end gap-10 text-white tracking-widest h-full"
           >
@@ -36,14 +36,13 @@
               Hi, i am Rick Lemmen a <span v-text="yearsOld"></span> year old
               front-end developer & designer. Welcome to my site
             </p>
-            <!--            <div class="btn btn&#45;&#45;primary">Discover more <font-awesome-icon icon="fa-solid fa-arrow-right" /> </div>-->
           </div>
         </div>
         <div
           class="col-span-10 col-start-2 md:col-span-6 md:col-start-4 xl:col-span-4 xl:col-start-9 relative aspect-[9/10] xl:aspect-auto xl:h-full"
         >
           <div
-            class="absolute left-0 -bottom-20 h-full w-full rounded-bl-extra rounded-tr-extra overflow-hidden picture"
+            class="absolute left-0 -bottom-20 w-full rounded-bl-extra rounded-tr-extra overflow-hidden picture aspect-[3/4]"
           >
             <NuxtPicture
               format="webp"
@@ -189,10 +188,14 @@ if (process.client) {
       },
       "+=0.5",
     )
-    .from("#section-2 .ani-item", {
-      duration: 1.4,
-      xPercent: 100,
-      ease: "power4.out",
-    }, "-=0.7");
+    .from(
+      "#section-2 .ani-item",
+      {
+        duration: 1.4,
+        xPercent: 100,
+        ease: "power4.out",
+      },
+      "-=0.7",
+    );
 }
 </script>
