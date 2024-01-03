@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     },
 
     // tailwindcss:
-    css: ["~/assets/style/main.css", "@fortawesome/fontawesome-svg-core/styles.css"],
+    css: ["~/assets/style/main.css"],
     postcss: {
         plugins: {
             'postcss-import': {},

@@ -81,7 +81,6 @@
 <script setup>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 const currentYear = new Date().getFullYear();
 
