@@ -1,0 +1,7 @@
+@layer components {
+    .nav {
+        &__item {
+            @apply text-black underline;
+        }
+    }
+}

@@ -1,6 +1,6 @@
 <template>
-  <div class="relative">
-<!--    <TheNavbar/>-->
-    <slot/>
+  <div class="relative bg-bg">
+    <TheNavbar />
+    <slot />
   </div>
 </template>

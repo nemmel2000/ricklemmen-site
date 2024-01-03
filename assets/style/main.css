@@ -1,78 +1,20 @@
+@import "components/index.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
     html, body {
-        @apply scroll-smooth overflow-x-hidden leading-relaxed min-h-screen;
-        font-family: "Plus Jakarta Sans", sans-serif;
+        @apply scroll-smooth overflow-x-hidden leading-relaxed min-h-screen font-jakarta;
     }
 
-    .container {
-        @apply px-4 mx-auto lg:px-0;
+    .container{
+        @apply mx-auto px-4;
     }
 
-    .logo {
-        @apply h-10 w-full top-0 left-0;
-    }
-
-    .nav-item {
-        @apply after:w-full after:h-1 after:absolute after:bottom-0 after:left-0 after:bg-primary after:opacity-0 after:scale-x-0 after:transition-all after:duration-300 after:ease-in-out;
-    }
-
-    .bg-home {
-        @apply bg-cover bg-center bg-no-repeat w-screen h-screen;
-        background: transparent linear-gradient(122deg, #273762 0%, #061B21 45%, var(--unnamed-color-000000) 100%) 0% 0% no-repeat padding-box;
-        background: transparent linear-gradient(122deg, #273762 0%, #061B21 45%, #000000 100%) 0% 0% no-repeat padding-box;
-        opacity: 0.95;
-        backdrop-filter: blur(30px);
-        -webkit-backdrop-filter: blur(30px);
-    }
-
-    .title-h1 {
-
-        @apply text-4xl sm:text-6xl lg:text-8xl text-center font-black;
-        background: transparent linear-gradient(249deg, var(--unnamed-color-ffffff) 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
-        background: transparent linear-gradient(249deg, #FFFFFF 0%, #A0D5F8 41%, #6EC5FB 100%) 0% 0% no-repeat padding-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-
-    .title-p {
-        @apply text-white text-center font-light;
-    }
-
-    .earth {
-        @apply w-96 absolute -right-[20%] -bottom-[20%] floating floating--delayed;
-    }
-
-    .planet {
-        @apply w-96 absolute left-0 bottom-0 floating hidden md:block;
-    }
-
-
-    .floating {
-        animation-name: floating;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        margin-left: 30px;
-        margin-top: 5px;
-    }
-
-    .floating--delayed {
-        animation-delay: 1.5s;
-    }
-
-    @keyframes floating {
-        0% {
-            transform: translate(0, 0px);
-        }
-        50% {
-            transform: translate(0, 15px);
-        }
-        100% {
-            transform: translate(0, -0px);
-        }
+    .animate{
+        @apply transition-all duration-300 ease-in-out;
     }
 }
+
