@@ -16,5 +16,9 @@
     .animate{
         @apply transition-all duration-300 ease-in-out;
     }
+
+    .cursor-follower {
+        @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-primary/80 z-[120] select-none pointer-events-none
+    }
 }
 

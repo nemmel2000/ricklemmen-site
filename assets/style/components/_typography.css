@@ -6,6 +6,10 @@
         &--h1{
             @apply text-4xl xl:text-[80px] font-bold tracking-[10px] leading-tight;
         }
+
+        &--h2{
+            @apply text-3xl xl:text-[60px] font-bold tracking-[10px] leading-tight;
+        }
     }
 
     .box{
