@@ -9,6 +9,10 @@
         @apply scroll-smooth overflow-x-hidden leading-relaxed min-h-screen font-jakarta;
     }
 
+    .text-gradient {
+        @apply bg-gradient-to-r from-white to-[#A39A96] text-transparent bg-clip-text;
+    }
+
     .container{
         @apply mx-auto px-4;
     }
@@ -18,7 +22,19 @@
     }
 
     .cursor-follower {
-        @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-primary/80 z-[120] select-none pointer-events-none
+        @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-white/80 z-[120] select-none pointer-events-none
+    }
+
+    .line-parant{
+        @apply overflow-clip w-max;
+    }
+
+    .mask{
+        @apply overflow-clip;
+    }
+
+    .link {
+        @apply animate w-max after:animate relative after:absolute after:-bottom-0.5 after:left-0 after:h-[1px] after:w-full after:bg-white after:content-[''] hover:after:w-0;
     }
 }
 

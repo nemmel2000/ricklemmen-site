@@ -51,7 +51,7 @@ module.exports = {
                         light: '#DFF9FB',
                     },
                     tertiary: '#0D0D0E',
-                    'bg': "#FCFCFC",
+                    'bg': "#121212",
                 },
             },
         },
