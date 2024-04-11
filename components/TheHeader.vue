@@ -12,20 +12,20 @@
         />
       </div>
       <div class="container grid grid-cols-12 h-full pt-32 2xl:pt-40">
-        <div class="col-span-12 lg:col-span-9 h-full 2xl:pt-10 pb-10 xl:pb-32 min-h-[80vh]">
+        <div class="col-span-12 lg:col-span-9 h-full 2xl:pt-10 pb-10 xl:pb-32 lg:min-h-[80vh]">
           <div
-              class="flex flex-col gap-10 text-white tracking-widest h-full"
+              class="flex flex-col gap-10 text-white tracking-widest h-max pb-10 lg:pb-0 lg:h-full"
           >
-            <div class="flex flex-col gap-y-10">
+            <div class="flex flex-col gap-y-4 lg:gap-y-10">
               <h1 class="header-title text-gradient">
                 Creating web<br/>experiences
               </h1>
-              <p class="font-light w-1/2 tracking-[0.2em]">
+              <p class="font-light lg:w-1/2 tracking-[0.2em]">
                 Hoi, mijn naam is Rick Lemmen en ik ben een <span v-text="yearsOld"></span>-jarige frontend ontwikkelaar. Ik breng graag een unieke draai aan elk project met mijn creatieve benadering. Bezoek mijn website en bekijk mijn portfolio!
               </p>
             </div>
           </div>
-          <div class="text-4xl text-white group w-max group ani-cursor cursor-pointer animate scroll-to-more">
+          <div class="text-4xl text-white group w-max group ani-cursor cursor-pointer animate scroll-to-more relative z-20">
             <p>Discover</p>
             <div class="inline-flex gap-4">
               <p class="inline-flex fill-white text-white">More </p>
@@ -60,103 +60,9 @@
 
 <style lang="postcss" scoped>
 .header-title {
-  @apply text-[120px] font-bold leading-none tracking-[0.15em];
+  @apply text-4xl lg:text-[120px] font-bold leading-none tracking-[0.15em];
 }
 
-.hover-point {
-  position: absolute;
-  z-index: 2;
-  width: calc(100% / 3);
-  height: calc(100% / 3);
-}
-
-.hover-point:nth-child(1) {
-  top: 0;
-  left: 0;
-}
-
-.hover-point:nth-child(2) {
-  top: 0;
-  left: calc(100% / 3);
-}
-
-.hover-point:nth-child(3) {
-  top: 0;
-  right: 0;
-}
-
-.hover-point:nth-child(4) {
-  top: calc(100% / 3);
-  left: 0;
-}
-
-.hover-point:nth-child(5) {
-  top: calc(100% / 3);
-  right: 0;
-}
-
-.hover-point:nth-child(6) {
-  bottom: 0;
-  left: 0;
-}
-
-.hover-point:nth-child(7) {
-  bottom: 0;
-  left: calc(100% / 3);
-}
-
-.hover-point:nth-child(8) {
-  bottom: 0;
-  right: 0;
-}
-
-.hover-point:nth-child(1):hover ~ .pf-photo {
-  box-shadow: 15px 15px 50px rgba(0, 0, 0, .3);
-  transform-origin: right top;
-  transform: perspective(2000px) rotateX(5deg) rotateY(-5deg) rotateZ(2deg);
-}
-
-.hover-point:nth-child(2):hover ~ .pf-photo {
-  box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
-  transform-origin: center top;
-  transform: perspective(2000px) rotateX(5deg);
-}
-
-.hover-point:nth-child(3):hover ~ .pf-photo {
-  box-shadow: -15px 15px 50px rgba(0, 0, 0, .3);
-  transform-origin: left top;
-  transform: perspective(2000px) rotateX(5deg) rotateY(5deg) rotateZ(-2deg);
-}
-
-.hover-point:nth-child(4):hover ~ .pf-photo {
-  box-shadow: 15px 5px 50px rgba(0, 0, 0, .3);
-  transform-origin: left center;
-  transform: perspective(2000px) rotateY(-5deg);
-}
-
-.hover-point:nth-child(5):hover ~ .pf-photo {
-  box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
-  transform-origin: right center;
-  transform: perspective(2000px) rotateY(5deg);
-}
-
-.hover-point:nth-child(6):hover ~ .pf-photo {
-  box-shadow: 15px -15px 50px rgba(0, 0, 0, .3);
-  transform-origin: right bottom;
-  transform: perspective(2000px) rotateX(-5deg) rotateY(-5deg) rotateZ(-2deg);
-}
-
-.hover-point:nth-child(7):hover ~ .pf-photo {
-  box-shadow: 0 -15px 50px rgba(0, 0, 0, .3);
-  transform-origin: center bottom;
-  transform: perspective(2000px) rotateX(-5deg);
-}
-
-.hover-point:nth-child(8):hover ~ .pf-photo {
-  box-shadow: -15px -15px 50px rgba(0, 0, 0, .3);
-  transform-origin: left bottom;
-  transform: perspective(2000px) rotateX(-5deg) rotateY(5deg) rotateZ(2deg);
-}
 
 .pf-photo {
   position: absolute;

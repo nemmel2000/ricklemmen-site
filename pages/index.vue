@@ -6,7 +6,7 @@
   <!-- Content -->
   <TheHeader/>
 
-  <div class="mt-20">
+  <div class="mt-32 lg:mt-20">
     <TheUspsLines/>
   </div>
 
@@ -15,8 +15,8 @@
       <div class="col-span-full lg:col-span-5 relative ani-move-up">
         <div class="flex flex-col gap-y-6 pl-10 pt-10 relative z-10">
           <div class="flex flex-col justify-between">
-            <h3 class="text-2xl text-white font-thin">Over mij</h3>
-            <h2 class="text-8xl text-white">Creative Front-End Ontwikkelaar</h2>
+            <h3 class="text-xl lg:text-2xl text-white font-thin">Over mij</h3>
+            <h2 class="text-3xl lg:text-8xl text-white">Creative Front-End Ontwikkelaar</h2>
           </div>
           <NuxtPicture
               class="w-1/2 h-full object-cover mt-20 hover:scale-90 origin-center hover:-translate-y-2 hover:-translate-x-1 animate"
