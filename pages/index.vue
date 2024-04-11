@@ -219,7 +219,6 @@ if (process.client) {
           start: 'top 100%',
           end: 'top 10%',
           scrub: 0.5,
-          markers: true,
         },
         duration: 1.4,
         y: moveHeight,

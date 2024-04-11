@@ -56,7 +56,6 @@ if (process.client) {
           trigger: '.ani-scroll__left',
           start: 'top 100%', // Example value, adjust as needed
           scrub: 0.5,
-          markers: false,
         },
         xPercent: aniSpeed,
       });
