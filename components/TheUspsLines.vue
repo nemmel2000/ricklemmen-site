@@ -87,7 +87,7 @@ if (process.client) {
 
     .line-usp {
       /*On hover show only the border of the text*/
-      @apply animate flex-shrink-0 hover:text-transparent;
+      @apply transition-all duration-300 ease-in-out flex-shrink-0 hover:text-transparent;
 
       &:hover {
         -webkit-text-stroke: 3px white; /* width and color */
