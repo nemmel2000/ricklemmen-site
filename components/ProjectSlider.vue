@@ -16,7 +16,7 @@
               <div class="grid grid-cols-12 gap-4 h-full">
                 <div class="col-span-12 md:col-span-6 flex flex-col gap-y-6 h-full justify-end">
                   <h3 class="title--h2 text-white ani-item">{{ project.title }}</h3>
-                  <div class="inline-flex gap-x-2 ani-item">
+                  <div cs="inline-flex gap-x-2 ani-item">
                     <template v-for="tag in project.tags">
                       <span class="border-2 border-secondary-light ani-cursor rounded-full px-2 py-1 text-xs hover:bg-secondary-light animate hover:text-black hover:-translate-y-0.5">{{ tag }}</span>
                     </template>
