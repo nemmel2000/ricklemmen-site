@@ -34,7 +34,7 @@
     }
 
     .link {
-        @apply animate w-max after:animate relative after:absolute after:-bottom-0.5 after:left-0 after:h-[1px] after:w-full after:bg-white after:content-[''] hover:after:w-0;
+        @apply w-max after:animate relative after:absolute after:-bottom-0.5 after:left-0 after:h-[1px] after:w-full after:bg-white after:content-[''] hover:after:w-0;
     }
 }
 
