@@ -20,6 +20,7 @@
         "@nuxt/image": "^1.1.0",
         "@nuxtjs/color-mode": "^3.2.0",
         "@studio-freight/lenis": "^1.0.34",
+        "@vercel/speed-insights": "^1.0.10",
         "gsap": "^3.11.5"
     }
 }
