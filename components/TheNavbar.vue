@@ -80,7 +80,7 @@ onMounted(() => {
 function handleNav() {
   navOpen.value = !navOpen.value;
   let navTl = gsap.timeline();
-  console.log(navOpen.value);
+
   if (navOpen.value === true) {
     gsap.to(".nav-items", {
       duration: 0.1,
