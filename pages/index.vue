@@ -24,13 +24,12 @@ import TheIntro from "~/components/TheIntro.vue";
 import TheHeader from "~/components/TheHeader.vue";
 import TheFooter from "~/components/TheFooter.vue";
 import TheUspsLines from "~/components/TheUspsLines.vue";
-// import ProjectSlider from "~/components/ProjectSlider.vue";
 
 const currentYear = new Date().getFullYear();
 
 // Developer Console logs
 gsap.config({
-  nullTargetWarn: false,
+  nullTargetWarn: true,
 });
 
 let defaultAnimation = {
