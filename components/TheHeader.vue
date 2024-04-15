@@ -12,7 +12,7 @@
         />
       </div>
       <div class="container grid grid-cols-12 h-full pt-32 2xl:pt-40">
-        <div class="col-span-12 lg:col-span-9 h-full 2xl:pt-10 pb-10 xl:pb-32 lg:min-h-[80vh]">
+        <div class="col-span-12 lg:col-span-9 h-full 2xl:pt-10 lg:pb-10 xl:pb-32 lg:min-h-[80vh]">
           <div
               class="flex flex-col gap-10 text-white tracking-widest h-max pb-10 lg:pb-0 lg:h-full"
           >
@@ -43,11 +43,11 @@
             class="col-span-10 col-start-2 md:col-span-6 md:col-start-4 xl:col-span-4 xl:col-start-9 relative aspect-[9/10] xl:aspect-auto xl:h-full ani-move-up"
         >
           <div
-              class="absolute ani-cursor left-0 -bottom-40 w-full  picture aspect-[3/4]"
+              class="absolute ani-cursor left-0 -bottom-32  lg:-bottom-40 w-full picture aspect-[3/4]"
           >
             <NuxtPicture
                 format="webp"
-                class="w-full h-full object-contain pf-photo rounded-bl-extra rounded-tr-extra overflow-hidden"
+                class="w-full h-full object-cover pf-photo rounded-bl-extra rounded-tr-extra overflow-hidden"
                 src="img/foto_rick.jpg"
                 alt="foto of Rick Lemmen"
             />
