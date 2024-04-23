@@ -12,15 +12,15 @@
 
   <TheAboutMeBlock/>
 
-  <div class="mt-40">&nbsp;</div>
-  <section id="image-scale" class="h-[100vh] flex justify-center relative overflow-clip">
+  <div class="mt-20 lg:mt-40">&nbsp;</div>
+  <section id="image-scale" class="xl:h-[100vh] aspect-square xl:aspect-auto flex justify-center relative overflow-clip">
     <NuxtImg
-        class="object-cover object-center size-full ani-scale-img origin-top ani-up"
+        class="object-cover object-center size-full ani-scale-img origin-center ani-up"
         src="img/mockup.jpg"
         alt="background image"
     />
   </section>
-  <section id="projects" class="py-[50vh]" style="color: white;">
+  <section id="projects" class="py-60 lg:py-[50vh]" style="color: white;">
 
     <div class="container">
       <div class="flex flex-col gap-y-10">
@@ -37,14 +37,16 @@
         </div>
 
         <div class="inline-flex justify-between border-b pb-6">
-          <h2 class="text-3xl lg:text-6xl font-bold">Eddy Sushi</h2>
+          <h2 class="text-3xl lg:text-6xl font-bold">Webdesigns</h2>
           <p class="translate-y-2">03.</p>
         </div>
 
         <div class="inline-flex justify-between border-b pb-6">
-          <h2 class="text-3xl lg:text-6xl font-bold">Landingspages</h2>
+          <h2 class="text-3xl lg:text-6xl font-bold">Websites</h2>
           <p class="translate-y-2">04.</p>
         </div>
+
+        <p class="text-xl lg:text-2xl font-thin">Kom binnenkort terug om de projecten en meer te bekijken!</p>
 
       </div>
 
@@ -199,6 +201,12 @@ if (process.client) {
     });
   });
 
+  let movement = 100;
+  //if screensize is smaller then md
+  if (window.innerWidth < 768) {
+    movement = 40;
+  }
+
   //ani-exit
   let aniExit = document.querySelectorAll(".ani-exit");
   aniExit.length > 0 &&
@@ -211,7 +219,7 @@ if (process.client) {
         scrub: 1,
       },
       ease: "power2.inOut",
-      y: -100,
+      y: -movement,
 
     });
   });
@@ -228,7 +236,7 @@ if (process.client) {
         scrub: 1,
       },
       ease: "power2.inOut",
-      y: 100,
+      y: movement,
     });
   });
 
@@ -258,7 +266,6 @@ if (process.client) {
       trigger: "#projects",
       start: "top 60%",
       end: "center 50%",
-      markers: true,
       scrub: 2,
     },
   });
@@ -272,7 +279,7 @@ if (process.client) {
   }).to("#TheNavbar .color-path", {
     fill: "black",
     duration: 1,
-  }, "-=1");
+  }, "-=0.5");
 
 
 // CUSTOM CURSOR
