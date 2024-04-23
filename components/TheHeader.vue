@@ -43,7 +43,7 @@
             class="col-span-10 col-start-2 md:col-span-6 md:col-start-4 xl:col-span-4 xl:col-start-9 relative aspect-[9/10] xl:aspect-auto xl:h-full ani-move-up"
         >
           <div
-              class="absolute ani-cursor left-0 -bottom-32  lg:-bottom-40 w-full picture aspect-[3/4]"
+              class="absolute ani-cursor left-0 -bottom-32  lg:-bottom-40 w-full picture aspect-[3/4] ani-exit"
           >
             <NuxtPicture
                 format="webp"
