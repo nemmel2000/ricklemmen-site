@@ -16,7 +16,7 @@
   <section id="image-scale" class="xl:h-[100vh] aspect-square xl:aspect-auto flex justify-center relative overflow-clip">
     <NuxtImg
         class="object-cover object-center size-full ani-scale-img origin-center ani-up"
-        src="img/mockup.jpg"
+        src="img/mockup_rijr.jpg"
         alt="background image"
     />
   </section>
