@@ -1,7 +1,7 @@
 <template>
   <nav class="fixed top-0 left-0 z-50 w-full bg-transparent nav" id="TheNavbar">
     <div class="container flex items-center justify-between py-3 mx-auto">
-      <a href="../" class="relative">
+      <a href="../" aria-label="Go to the top" class="relative">
         <div class="relative h-12 w-full xl:-translate-x-[120%]">
           <svg
               width="38"
@@ -47,7 +47,7 @@
       </a>
       <div class="flex items-center justify-end gap-x-10 w-full">
         <div class="bg-tertiary rounded-extra px-8 py-4 block">
-          <div class="inline-flex items-center justify-center gap-x-10 h-min">
+          <div class="inline-flex items-center justify-center gap-x-10 h-min translate-y-0.5">
 
             <button
                 onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
@@ -62,7 +62,8 @@
             </button>
             <div class="inline-flex items-center gap-x-6 nav-items pr-4">
               <span class="nav-item after:animate pointer-cursor scroll-to-top">Home</span>
-              <a href="#intro" class="nav-item after:animate scroll-to-more ">About me</a>
+              <span class="nav-item after:animate scroll-to-more ">About me</span>
+              <span class="nav-item after:animate scroll-to-projects">Projects</span>
               <!--              <a href="#intro" class="nav-item after:animate">Home</a>-->
             </div>
           </div>

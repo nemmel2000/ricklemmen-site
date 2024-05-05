@@ -1,5 +1,5 @@
 <template>
-  <section id="usps" class="-mt-20 lg:-mt-40 py-10 lg:py-20 relative z-1">
+  <section id="usps" class="-mt-20 lg:-mt-32 py-10 lg:py-20 relative z-1">
     <div class=" py-10 lg:py-20 rotate-6 relative z-10 border-white">
       <div class="inline-flex ani-scroll__right line relative z-10 my-3">
         <a href="" target="_blank" class="line-usp" rel="nofollow noopener noreferrer">Javascript</a>

@@ -60,7 +60,7 @@
 
 <style lang="postcss" scoped>
 .header-title {
-  @apply text-4xl xl:text-7xl xl:text-[120px] font-bold leading-none tracking-[0.15em];
+  @apply text-4xl xl:text-8xl 2xl:text-9xl font-bold leading-none tracking-[0.15em];
 }
 
 

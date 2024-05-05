@@ -5,6 +5,18 @@ export default defineNuxtConfig({
         enabled: true,
     },
 
+    app:{
+        head: {
+            title: "Rick Lemmen",
+            meta: [
+                { charset: "utf-8" },
+                { name: "viewport", content: "width=device-width, initial-scale=1" },
+                { hid: "description", name: "description", content: "Portfolio site van Rick Lemmen - Front-end developer en webdesigner." },
+            ],
+            link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+        },
+    },
+
     // colorMode:
     modules: ["@nuxtjs/color-mode", "@nuxt/image",],
     colorMode: {
