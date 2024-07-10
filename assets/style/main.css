@@ -13,8 +13,8 @@
         @apply bg-gradient-to-r from-white to-[#A39A96] text-transparent bg-clip-text;
     }
 
-    .container{
-        @apply mx-auto px-4;
+    .container-custom{
+        @apply mx-auto px-4 max-w-full xl:px-10 2xl:max-w-[1920px];
     }
 
     .animate{
@@ -22,7 +22,7 @@
     }
 
     .cursor-follower {
-        @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-white/80 z-[120] select-none pointer-events-none
+        @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-primary/80 z-[120] select-none pointer-events-none
     }
 
     .line-parant{

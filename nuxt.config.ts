@@ -15,6 +15,10 @@ export default defineNuxtConfig({
             ],
             link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
         },
+        layoutTransition: {
+            name: "layout",
+            mode: "out-in",
+        },
     },
 
     // colorMode:

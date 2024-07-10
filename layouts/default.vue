@@ -1,6 +1,6 @@
 <template>
   <SpeedInsights />
-  <div class="relative bg-bg">
+  <div class="relative bg-bg-light">
     <TheNavbar />
     <slot />
   </div>
