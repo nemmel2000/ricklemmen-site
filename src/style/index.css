@@ -2,34 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    html, body {
-        @apply overflow-x-hidden leading-relaxed min-h-screen font-jakarta;
-    }
+@layer base {
+  html,
+  body {
+    @apply overflow-x-hidden leading-relaxed min-h-screen font-jakarta;
+  }
 
-    .container-xl{
-        @apply mx-auto px-4 max-w-full xl:px-10 2xl:max-w-[1920px];
-    }
+  .container-xl {
+    @apply mx-auto px-4 max-w-full xl:px-10 2xl:max-w-[1920px];
+  }
 
-    .animate{
-        @apply transition-all duration-300 ease-in-out;
-    }
+  .animate {
+    @apply transition-all duration-300 ease-in-out;
+  }
 
-    .h-screen{
-        height: 100dvh;
-    }
+  .h-screen {
+    height: 100dvh;
+  }
 
-    .w-screen{
-        width: 100dvw;
-    }
+  .w-screen {
+    width: 100dvw;
+  }
 }
 
-@layer components{
-    .cursor-follower {
-        @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-white/80 z-[120] select-none pointer-events-none
-    }
+@layer components {
+  .cursor-follower {
+    @apply fixed top-0 left-0 w-5 h-5 rounded-full bg-opacity-0 bg-white/80 z-[120] select-none pointer-events-none;
+  }
 }
 
 .fancybox__container {
-    @apply h-screen;
+  @apply h-screen;
 }
