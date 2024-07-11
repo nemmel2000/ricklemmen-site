@@ -28,9 +28,9 @@
           <div class="nav-item" data-scroll-to="projects">
             Cases
           </div>
-          <div class="nav-item" data-scroll-to="contact">
-           Contact
-          </div>
+<!--          <div class="nav-item" data-scroll-to="contact">-->
+<!--           Contact-->
+<!--          </div>-->
         </div>
       </div>
     </div>
