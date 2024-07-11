@@ -248,7 +248,7 @@
               data-src="/img/mockup_rijr.jpg"
               data-caption="Regio in je Rugzak"
             >
-              <h2 class="project-title group-hover:translate-x-4 ani-text-up">
+              <h2 class="project-title group-hover:translate-x-4 animate ani-text-up">
                 Regio in je rugzak
               </h2>
               <div class="ani-number h-1/2 overflow-clip group relative">
@@ -276,7 +276,7 @@
               data-src="/img/projects/makita_mockup_blured.jpg"
               data-caption="Makita"
             >
-              <h2 class="project-title group-hover:translate-x-4 ani-text-up">Makita</h2>
+              <h2 class="project-title group-hover:translate-x-4 animate ani-text-up">Makita</h2>
               <div class="ani-number h-1/2 overflow-clip group relative">
                 <p class="group-hover:-translate-y-full animate">02.</p>
                 <p
@@ -302,7 +302,9 @@
               data-src="/img/projects/bates.jpg"
               data-caption="Bates & Madolex"
             >
-              <h2 class="project-title group-hover:translate-x-4 ani-text-up">Bates & Madolex</h2>
+              <h2 class="project-title group-hover:translate-x-4 animate ani-text-up">
+                Bates & Madolex
+              </h2>
               <div class="ani-number h-1/2 overflow-clip group relative">
                 <p class="group-hover:-translate-y-full animate">03.</p>
                 <p
@@ -324,7 +326,9 @@
               data-src="/img/projects/marketmix.jpg"
               data-caption="Landingspages - Marketmix"
             >
-              <h2 class="project-title group-hover:translate-x-4 ani-text-up">Landingpages</h2>
+              <h2 class="project-title group-hover:translate-x-4 animate ani-text-up">
+                Landingpages
+              </h2>
               <div class="ani-number h-1/2 overflow-clip group relative">
                 <p class="group-hover:-translate-y-full animate">04.</p>
                 <p
@@ -344,7 +348,7 @@
             </div>
 
             <!--          <div class="project group" data-project="5">-->
-            <!--            <h2 class="project-title group-hover:translate-x-4 ani-text-up">Bekijk meer</h2>-->
+            <!--            <h2 class="project-title group-hover:translate-x-4 animate ani-text-up">Bekijk meer</h2>-->
             <!--            <div class="ani-number h-1/2 overflow-clip group relative">-->
             <!--              <p class="group-hover:-translate-y-full animate">05.</p>-->
             <!--              <p class="group-hover:-translate-y-0 animate absolute top-0 left-0 translate-y-full" aria-hidden="true">05.</p>-->
