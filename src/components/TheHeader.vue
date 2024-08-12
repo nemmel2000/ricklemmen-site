@@ -78,17 +78,17 @@ const headerItems = [
   {
     id: 0,
     title: 'Budget Home Store',
-    image: '../public/img/projects/bhs_design.jpg'
+    image: 'public/img/projects/bhs_design.jpg'
   },
   {
     id: 1,
     title: 'Regio in je rugzak',
-    image: '../public/img/mockup_rijr.jpg'
+    image: 'public/img/mockup_rijr.jpg'
   },
   {
     id: 2,
     title: 'MarketMix',
-    image: '../public/img/projects/marketmix.jpg'
+    image: 'public/img/projects/marketmix.jpg'
   }
 ]
 
