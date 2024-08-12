@@ -1,8 +1,8 @@
 <template>
-  <nav class="fixed top-6 left-0 w-full z-100">
+  <nav class="fixed top-8 left-0 w-full z-100 px-4">
     <div class="container-xl">
-      <div class="flex justify-between">
-        <div :class="positionY > 40 ? 'size-12' : 'size-28'" class="animate group duration-500">
+      <div class="flex justify-between items-end">
+        <div class="animate group duration-500 size-16">
           <svg
             width="100%"
             height="100%"

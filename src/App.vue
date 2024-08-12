@@ -220,37 +220,74 @@ onMounted(() => {
       width: '0%',
       ease: 'none'
     })
-    headerTl.from(
-      '#intro-text',
+    headerTl.to(
+      '.intro-mask',
       {
-        duration: 0.5,
-        y: 40,
-        opacity: 0,
-        ease: 'power4.out',
-        stagger: 0.45,
-        filter: 'blur(6px)'
+        duration: 2,
+        clipPath: 'polygon(0 100%, 100% 100%, 100% 0%, 0 0%)' // Animate to full visibility
       },
-      '-=1.4'
+      '-=0.5'
+    )
+    headerTl.to(
+      '#intro',
+      {
+        duration: 1.2,
+        scale: 0,
+        ease: 'power4.inOut',
+        filter: 'blur(4px)',
+        onComplete: () => {
+          // Changed parentheses to a colon
+          document.getElementById('intro').remove()
+        }
+      },
+      '-=0.2'
+    )
+    headerTl.from(
+      '.header__content',
+      {
+        scale: 0.2,
+        ease: 'power4.Out',
+        filter: 'blur(4px)',
+        yPercent: 150,
+        xPercent: -80,
+        rotate: 12,
+        duration: 1.5
+      },
+      '-=0.9'
+    )
+    headerTl.from(
+      '.header__tabs',
+      {
+        scale: 0.2,
+        ease: 'power4.Out',
+        filter: 'blur(4px)',
+        yPercent: 150,
+        xPercent: -80,
+        rotate: 12,
+        duration: 1.5
+      },
+      '-=1.5'
     )
     headerTl.from('body', {
       height: window.innerHeight,
       duration: 0.1
     })
-    headerTl.to(
-      '#intro',
-      {
-        duration: 1.7,
-        scale: 1.35,
-        yPercent: -115,
-        ease: 'power4.inOut',
-        webkitFilter: 'blur(10px)'
-      },
-      '-=0.2'
-    )
-    headerTl.to('#intro', {
-      duration: 0.1,
-      zIndex: -100
+    headerTl.from('.header__text', {
+      y: 40,
+      filter: 'blur(4px)',
+      opacity: 0,
+      ease: 'power4.Out'
     })
+    headerTl.from(
+      'nav',
+      {
+        ease: 'power4.inOut',
+        yPercent: -100,
+        opacity: 0,
+        filter: 'blur(10px)'
+      },
+      '-=1'
+    )
     headerTl
       .from('.design span', {
         y: 24,
@@ -283,7 +320,7 @@ onMounted(() => {
         '-=0.5'
       )
       .from(
-        '.version p',
+        '.version',
         {
           y: 24,
           opacity: 0,
@@ -407,39 +444,39 @@ onMounted(() => {
       })
 
     // color switch
-    let colorTL = gsap.timeline({
-      scrollTrigger: {
-        trigger: '#projects',
-        start: 'top 50%',
-        end: 'center 50%',
-        scrub: 2
-      }
-    })
-
-    colorTL
-      .to('#projects', {
-        backgroundColor: '#121212',
-        color: 'white',
-        borderColor: 'white',
-        ease: 'power2.inOut',
-        duration: 1
-      })
-      .to(
-        '#TheNavbar .color-path',
-        {
-          fill: 'white',
-          duration: 1
-        },
-        '-=0.5'
-      )
-      .to(
-        '.cursor-follower',
-        {
-          backgroundColor: '#B5B5B5',
-          duration: 1
-        },
-        '-=1'
-      )
+    // let colorTL = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: '#projects',
+    //     start: 'top 50%',
+    //     end: 'center 50%',
+    //     scrub: 2
+    //   }
+    // })
+    //
+    // colorTL
+    //   .to('#projects', {
+    //     backgroundColor: '#121212',
+    //     color: 'white',
+    //     borderColor: 'white',
+    //     ease: 'power2.inOut',
+    //     duration: 1
+    //   })
+    //   .to(
+    //     '#TheNavbar .color-path',
+    //     {
+    //       fill: 'white',
+    //       duration: 1
+    //     },
+    //     '-=0.5'
+    //   )
+    //   .to(
+    //     '.cursor-follower',
+    //     {
+    //       backgroundColor: '#B5B5B5',
+    //       duration: 1
+    //     },
+    //     '-=1'
+    //   )
 
     //when .project is hovered change the style of the .project-img within the .project
     let projects = document.querySelectorAll('.project')
