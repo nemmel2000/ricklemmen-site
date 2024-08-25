@@ -1,0 +1,22 @@
+@layer components {
+  /* Titles */
+  .title-1 {
+    @apply text-8xl;
+  }
+
+  .title-2 {
+    @apply text-[42px] lg:text-7xl xl:text-[120px] font-extrabold leading-tight tracking-widest;
+  }
+
+  /* Font styles */
+  html,
+  body {
+    @apply leading-loose tracking-wider;
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #ffffff, #a39a96);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}

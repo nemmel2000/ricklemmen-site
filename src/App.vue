@@ -16,6 +16,7 @@ import SplitType from 'split-type'
 import Lenis from 'lenis'
 import { Fancybox } from '@fancyapps/ui'
 import '@fancyapps/ui/dist/fancybox/fancybox.css'
+
 Fancybox.bind('[data-fancybox]', {
   hideScrollbar: true,
   backdropClick: 'close',
@@ -30,11 +31,14 @@ Fancybox.bind('[data-fancybox]', {
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
-gsap.config({
-  nullTargetWarn: true
-})
+// TODO: enable before production
+// gsap.config({
+//   nullTargetWarn: true
+// })
 
 onMounted(() => {
+  console.log('%cWelkom op mijn portfolio', 'color: white; background-color: #007acc;')
+
   setTimeout(() => {
     //ani directions
     function aniDirection(selector, direction) {
@@ -99,7 +103,7 @@ onMounted(() => {
     let movement = 100
     //if screensize is smaller then md
     if (window.innerWidth < 768) {
-      movement = 20
+      movement = 50
     }
 
     //ani-exit
@@ -109,11 +113,11 @@ onMounted(() => {
         gsap.to(item, {
           scrollTrigger: {
             trigger: item,
-            start: 'top 20%',
-            end: 'bottom 1%',
+            start: '1% bottom',
+            end: 'top top',
             scrub: 1
           },
-          ease: 'power2.inOut',
+          ease: 'power2.out',
           y: -movement,
           zIndex: 10
         })
@@ -443,40 +447,61 @@ onMounted(() => {
         })
       })
 
+    const aniRevealAnimations = gsap.utils.toArray('.ani-img-reveal')
+
+    if (aniRevealAnimations.length > 0) {
+      aniRevealAnimations.forEach((item) => {
+        gsap.from(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: 'top 85%'
+          },
+          duration: 1,
+          y: 40,
+          ease: 'power2.out',
+          opacity: 0,
+          stagger: 0.2,
+          scale: 0.8,
+          filter: blur('10px')
+        })
+      })
+    }
+
     // color switch
-    // let colorTL = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: '#projects',
-    //     start: 'top 50%',
-    //     end: 'center 50%',
-    //     scrub: 2
-    //   }
-    // })
-    //
-    // colorTL
-    //   .to('#projects', {
-    //     backgroundColor: '#121212',
-    //     color: 'white',
-    //     borderColor: 'white',
-    //     ease: 'power2.inOut',
-    //     duration: 1
-    //   })
-    //   .to(
-    //     '#TheNavbar .color-path',
-    //     {
-    //       fill: 'white',
-    //       duration: 1
-    //     },
-    //     '-=0.5'
-    //   )
-    //   .to(
-    //     '.cursor-follower',
-    //     {
-    //       backgroundColor: '#B5B5B5',
-    //       duration: 1
-    //     },
-    //     '-=1'
-    //   )
+    let colorTL = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#projects',
+        start: '50% bottom',
+        end: '67% bottom',
+        scrub: 0.5,
+        markers: true
+      }
+    })
+
+    colorTL
+      .to('main', {
+        backgroundColor: '#FCFCFC',
+        color: 'black',
+        borderColor: 'black',
+        duration: 1
+      })
+      .to(
+        '#projects',
+        {
+          color: 'black',
+          borderColor: 'black',
+          duration: 1
+        },
+        '-=1'
+      )
+      .to(
+        '.color-path',
+        {
+          fill: 'black',
+          duration: 1
+        },
+        '-=0.8'
+      )
 
     //when .project is hovered change the style of the .project-img within the .project
     let projects = document.querySelectorAll('.project')

@@ -6,7 +6,7 @@
           <div
             class="header__image"
             style="
-              background-image: url(public/img/projects/bhs_design.jpg);
+              background-image: url(../../..//img/projects/bhs_design.jpg);
               background-position: center;
               background-size: cover;
             "
@@ -78,17 +78,17 @@ const headerItems = [
   {
     id: 0,
     title: 'Budget Home Store',
-    image: 'public/img/projects/bhs_design.jpg'
+    image: '/img/projects/bhs_design.webp'
   },
   {
     id: 1,
     title: 'Regio in je rugzak',
-    image: 'public/img/mockup_rijr.jpg'
+    image: '/img/mockup_rijr.webp'
   },
   {
     id: 2,
     title: 'MarketMix',
-    image: 'public/img/projects/marketmix.jpg'
+    image: '/img/projects/marketmix.webp'
   }
 ]
 
