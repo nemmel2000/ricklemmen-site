@@ -1,6 +1,6 @@
 <template>
   <section id="usps" class="py-20 relative z-1">
-    <div class="py-10 lg:py-20 rotate-6 lg:rotate-12 relative z-10 border-black">
+    <div class="py-10 lg:py-20 rotate-6 lg:rotate-[9deg] relative z-10 border-black">
       <div class="inline-flex ani-scroll__right line relative z-10 my-3">
         <a href="" target="_blank" class="line-usp" rel="nofollow noopener noreferrer"
           >Javascript</a

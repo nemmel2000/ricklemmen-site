@@ -1,6 +1,6 @@
 <template>
-  <section id="projects" class="pt-60 pb-40 lg:pb-60 lg:pt-[50vh] z-1" style="color: white">
-    <div class="container-xl">
+  <section class="pt-60 pb-40 lg:pb-60 z-1 scroll-m-20" style="color: white">
+    <div class="container-xl" id="projects">
       <div class="flex flex-col">
         <p class="text-xl lg:text-2xl font-thin">Een greep uit mijn projecten</p>
 
@@ -129,3 +129,4 @@
   @apply fixed w-2/5 mr-[10%] h-[60vh] top-1/2 -translate-y-1/2 left-0 right-0 ml-auto cursor-none pointer-events-none hidden lg:block z-10;
 }
 </style>
+<script setup lang="ts"></script>

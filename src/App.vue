@@ -117,9 +117,7 @@ onMounted(() => {
             end: 'top top',
             scrub: 1
           },
-          ease: 'power2.out',
-          y: -movement,
-          zIndex: 10
+          y: -movement
         })
       })
 
@@ -135,8 +133,7 @@ onMounted(() => {
             scrub: 1
           },
           ease: 'power2.inOut',
-          y: movement,
-          zIndex: 10
+          y: movement
         })
       })
 
@@ -246,6 +243,10 @@ onMounted(() => {
       },
       '-=0.2'
     )
+    headerTl.from('body', {
+      height: window.innerHeight,
+      duration: 0.1
+    })
     headerTl.from(
       '.header__content',
       {
@@ -272,10 +273,6 @@ onMounted(() => {
       },
       '-=1.5'
     )
-    headerTl.from('body', {
-      height: window.innerHeight,
-      duration: 0.1
-    })
     headerTl.from('.header__text', {
       y: 40,
       filter: 'blur(4px)',
@@ -473,8 +470,7 @@ onMounted(() => {
         trigger: '#projects',
         start: '50% bottom',
         end: '67% bottom',
-        scrub: 0.5,
-        markers: true
+        scrub: 0.5
       }
     })
 

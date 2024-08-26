@@ -5,7 +5,7 @@
   }
 
   .title-2 {
-    @apply text-[42px] lg:text-7xl xl:text-[120px] font-extrabold leading-tight tracking-widest;
+    @apply text-[42px] md:text-6xl lg:text-7xl xl:text-[120px] font-extrabold leading-tight tracking-widest;
   }
 
   /* Font styles */
