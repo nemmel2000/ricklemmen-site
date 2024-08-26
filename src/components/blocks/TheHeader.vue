@@ -21,7 +21,7 @@
               class="flex-col justify-end items-end text-white/80 text-sm version w-full pr-4 h-max mt-auto hidden lg:flex"
             >
               <div class="ani-number h-1/2 overflow-clip group relative text-white/80">
-                <p class="group-hover:-translate-y-full animate">V 1.0.1</p>
+                <p class="group-hover:-translate-y-full animate">V 1.1.0</p>
                 <p
                   class="group-hover:-translate-y-0 animate absolute top-0 left-0 translate-y-full"
                   aria-hidden="true"
