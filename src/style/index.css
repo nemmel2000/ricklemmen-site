@@ -1,3 +1,5 @@
+@import '_typography.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -23,6 +25,10 @@
   .w-screen {
     width: 100dvw;
   }
+
+  .intro-mask {
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
 }
 
 @layer components {
@@ -33,4 +39,47 @@
 
 .fancybox__container {
   @apply h-screen;
+}
+
+.slide-text {
+  @apply inline-flex items-center gap-x-6 whitespace-nowrap pr-6 tracking-[4px] text-white xl:text-2xl;
+  animation: rtl 14s infinite linear;
+
+  &--slow {
+    animation: rtl 30s infinite linear;
+  }
+}
+
+.slide-dot {
+  @apply -translate-y-0.5 text-3xl;
+}
+
+@keyframes textClipReveal {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  100% {
+    opacity: 1;
+    clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 0%);
+  }
+}
+
+@keyframes widthToFull {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes rtl {
+  0% {
+    transform: translateZ(0);
+    visibility: visible;
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
 }
